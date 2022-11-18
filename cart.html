@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+  <title> Shopping Cart | Flipkart.com</title>
+  <link rel="stylesheet" href="./css/myStyle.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <script src="https://kit.fontawesome.com/c4ad973a2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row shadow">
+      <div class="col-md-12" style="height:56px">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top shadow-sm">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto mt-1">
+              <div class="logo d-flex flex-column">
+                <a href="./index.html" class="flip_logo"><img src="./images/Flipkart.png" width="75px" height="20px"
+                    alt="logo" /></a>
+                <a href="./index.html" class="anchor_plus text-white"><i>Explore <span class="plus">Plus <img
+                        src="./images/plusStar.png" width="10" height="10" alt="" /></span></i></a>
+              </div>
+              <li class="nav-item">
+                <div class="search_bar">
+                  <form class="d-flex">
+                    <input class="form-control search_box me-0 rounded-0.1" type="search"
+                      placeholder="Search for products, brands and more" aria-label="Search" />
+                    <button class="btn_search"><i class="fa fa-search"></i></button>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-light text-primary login_btn ms-5 dropdown-toggle" type="submit"
+                        data-bs-toggle="dropdown" aria-expanded="false"> Login </button>
+                      <!-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false"> Login </a> -->
+                      <ul class="dropdown-menu more_dropdown_list" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="more_drop_li d-flex sign_li">
+                          <p class="new_login ms-4">New Customer</p>
+                          <a href="#" class="signup me-4">Sign Up</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa fa-user me-2"></i>My Profile</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa fa-shopping-cart me-2"></i> Flipkart
+                            Plus Zone</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-solid fa-bag-shopping me-2"></i>
+                            Orders</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-solid fa-heart me-2"></i>
+                            Wishlist</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-solid fa-gifts me-2"></i> Rewards</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-regular fa-credit-card me-2"></i>
+                            Gift Cards</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#">Become a Seller</a>
+              </li>
+              <div class="more_menu">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> More </a>
+                  <ul class="dropdown-menu more_dropdown_list" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-bell me-2"></i> Notification
+                        Preferences</a>
+                    </li>
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-question me-2"></i> 24X7 Customer
+                        Care</a>
+                    </li>
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-line-chart me-2"></i> Advertise</a>
+                    </li>
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-download me-2"></i> Download App</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="http://127.0.0.1:5500/cart.html">
+                  <i id="cart_icon" class="cart_icon fa fa-shopping-cart me-2 cart_notification" current_count="1"></i>
+                  Cart </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container  mb-4  rounded mt-4 p-2">
+    <div id="empty_cart" class="empty_cart d-flex justify-content-center align-items-center">
+    </div>
+    <div class="container pe-0">
+      <div class="row mt-5 gx-3">
+        <div id="label" class=" col-md-8 col-12 mb-lg-0 mb-5 ">
+          <div class="row mb-2 bg-white p-2 rounded border text">
+            <div class="col ">
+              <h6 class="text-dark pt-2">Shopping Cart </h6>
+            </div>
+          </div>
+          <div id="shopping_cart" class="left_side shadow-sm">
+          </div>
+          <div class="row shadow-sm">
+            <div class="col p-3 bg-white d-flex justify-content-end h-100">
+              <div>
+                <button onclick="clearCart()" class="text-white fw-bold py-3 px-5 rounded-1"
+                  style="background-color:orange; width: 250px;">REMOVE ALL </button>
+                <button class="text-white fw-bold py-3 px-5 rounded-1"
+                  style="background-color:#ff6161; width: 250px;">PLACE ORDER </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="price_details_col" class="col-md-4 col-10 mx-auto mt-lg-0 mt-md-5 pe-2 ">
+          <div id="price_details" class="right_side p-2 shadow-sm bg-white ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid border-top d-flex align-items-center justify-content-center" style="height:81px;">
+      <div class="container">
+        <div class="row text-secondary" style="font-size: 14px;">
+          <div class="col-md-8  d-flex justify-content-start">
+            <p class="me-5 ">Policies:Returns Policy | Terms of use | Security | Privacy | Infringement</p>
+            <p>© 2007-2022 Flipkart.com</p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end">
+            <p>Need help? Visit the Help Center or Contact Us</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

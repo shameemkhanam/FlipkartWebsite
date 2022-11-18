@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+  <title> New Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+  </title>
+  <link rel="stylesheet" href="./css/myStyle.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <script src="https://kit.fontawesome.com/c4ad973a2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" style="height:56px">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top shadow-sm">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto mt-1">
+              <div class="logo d-flex flex-column">
+                <a href="./index.html" class="flip_logo"><img src="./images/Flipkart.png" width="75px" height="20px"
+                    alt="logo" /></a>
+                <a href="./index.html" class="anchor_plus text-white"><i>Explore <span class="plus">Plus <img
+                        src="./images/plusStar.png" width="10" height="10" alt="" /></span></i></a>
+              </div>
+              <li class="nav-item">
+                <div class="search_bar">
+                  <form class="d-flex" autocomplete="off">
+                    <input id="index_input" class="form-control search_box me-0 rounded-0.1" type="search"
+                      placeholder="Search for products, brands and more" aria-label="Search" />
+                    <!-- <ul class="list"></ul> -->
+                    <button class="btn_search"><i class="fa fa-search"></i></button>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-light text-primary login_btn ms-5 dropdown-toggle" type="submit"
+                        data-bs-toggle="dropdown" aria-expanded="false"> Login</button>
+                      <!-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false"> Login </a> -->
+                      <ul class="dropdown-menu more_dropdown_list" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="more_drop_li d-flex sign_li">
+                          <p class="new_login ms-4">New Customer</p>
+                          <a href="#" class="signup me-4">Sign Up</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa fa-user me-2"></i>My Profile</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa fa-shopping-cart me-2"></i> Flipkart
+                            Plus Zone</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-solid fa-bag-shopping me-2"></i>
+                            Orders</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-solid fa-heart me-2"></i>
+                            Wishlist</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-solid fa-gifts me-2"></i> Rewards</a>
+                        </li>
+                        <li class="more_drop_li">
+                          <a class="dropdown-item" href="#"><i class="more_icon fa-regular fa-credit-card me-2"></i>
+                            Gift Cards</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#">Become a Seller</a>
+              </li>
+              <div class="more_menu">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> More </a>
+                  <ul class="dropdown-menu more_dropdown_list" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-bell me-2"></i> Notification
+                        Preferences</a>
+                    </li>
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-question me-2"></i> 24X7 Customer
+                        Care</a>
+                    </li>
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-line-chart me-2"></i> Advertise</a>
+                    </li>
+                    <li class="more_drop_li">
+                      <a class="dropdown-item" href="#"><i class="more_icon fa fa-download me-2"></i> Download App</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="http://127.0.0.1:5500/cart.html">
+                  <i id="cart_icon" class="cart_icon fa fa-shopping-cart me-2 cart_notification" current_count="0"></i>
+                  Cart </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </nav>
+    </div>
+    <div class="row bg-white shadow-sm border-bottom border-2">
+      <div class="col-md-12" style="height:111px;">
+        <div class="heading_categories d-flex">
+          <ul class="heading_category_list d-flex">
+            <li class="heading_category_items mb-0 pb-0">
+              <img src="./images/topOffers.png" alt="" class="cat_image">
+              <p class="heading_item_name mb-0">Top Offers</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/mobileTablets.png" alt="" class="cat_image">
+              <p class="heading_item_name">Mobiles & Tablets</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/electronics.png" alt="" class="cat_image">
+              <p class="heading_item_name">Electronics</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/tvAppliances.png" alt="" class="cat_image">
+              <p class="heading_item_name">TV & Appliances</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/fashion.png" alt="" class="cat_image">
+              <p class="heading_item_name">Fashion</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/beauty.png" alt="" class="cat_image">
+              <p class="heading_item_name">Beauty</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/homeFur.png" alt="" class="cat_image">
+              <p class="heading_item_name">Home & Furniture</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/fkOriginals.png" alt="" class="cat_image">
+              <p class="heading_item_name">FK Originals</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/flightsHotels.png" alt="" class="cat_image">
+              <p class="heading_item_name">Flights & Hotels</p>
+            </li>
+            <li class="heading_category_items">
+              <img src="./images/grocery.png" alt="" class="cat_image">
+              <p class="heading_item_name">Grocery</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid a_cont">
+    <div class="row">
+      <div class="col-md-12 mt-2 p-0">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item c_items active" data-bs-interval="10000">
+              <img src="./images/sliderImg.png" class="d-block w-100 c_image" alt="..." style="height:280px;">
+            </div>
+            <div class="carousel-item c_items" data-bs-interval="2000">
+              <img src="./images/sliderImg1.png" class="d-block w-100 c_image" alt="..." style="height:280px;">
+            </div>
+          </div>
+          <div class="carousel_buttons">
+            <button class="carousel-control-prev p-0 ms-0 car_btn" type="button"
+              data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-2 shadow-sm bg-white d-flex align-items-center p-0">
+        <div class="card border-0 h-100">
+          <div class="card-body text-center card_body_top_margin">
+            <h5 class="card-title text-center row2_title">Best of Electronics</h5>
+            <a href="http://127.0.0.1:5500/BestOfElectronics.html" class="btn btn-primary view_btn  mt-3">VIEW ALL</a>
+          </div>
+          <img class="card-img-bottom img-fluid p-0" src="./images/electronics/ElecBack.png" alt="Card image cap">
+        </div>
+      </div>
+      <div class="col-md-8 ps-0 pe-0 shadow-sm bg-white border-0">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <!-- slider-1 -->
+            <div class="carousel-item active">
+              <div class="row" style="height: 370px;">
+                <div class="col-md-3 text-center">
+                  <a href="http://127.0.0.1:5500/all_cameras.html" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px;">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/electronics/cameras.png" class="card-img-top img-fluid " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Top Mirrorless Cameras</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Shop Now!</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Canon,Sony... </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/electronics/hair_dryers.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Hair Dryers</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">from &#8377;399</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Philips,Nova & more </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 text-center">
+                  <a href="http://127.0.0.1:5500/all_monitors.html" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/electronics/monitors.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Monitors</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">from &#8377;9999</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">SAMSUNG </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/electronics/powerBanks.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Premium PowerBanks</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Shop Now!</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Mi, RealMe & more </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- slider-1 End -->
+            <!-- slider-2 -->
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px;">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/electronics/printers.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Printers</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">from &#8377;3999</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">HP</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/electronics/projectors.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Projectors</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">from &#8377;9999</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">ZEBRONICS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- slider-2 End -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- <i class="fa fa-arrow-right"></i> -->
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2 px-0">
+        <a href="#"><img src="./images/row2_right_img.png" class="img-fluid shadow-sm rounded-0 img-thumbnail h-100 "
+            alt=""></a>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-2 shadow-sm bg-white d-flex align-items-center p-0">
+        <div class="card border-0  h-100">
+          <div class="card-body text-center card_body_top_margin">
+            <h5 class="card-title text-center row2_title">Beauty, Food, Toys & more</h5>
+            <a href="http://127.0.0.1:5500/BestOfBFT.html" class="btn btn-primary view_btn  mt-3">VIEW ALL</a>
+          </div>
+          <img class="card-img-bottom img-fluid p-0" src="./images/BFT/BFT_back.png" alt="Card image cap">
+        </div>
+      </div>
+      <div class="col-md-10 ps-0 pe-0 shadow-sm bg-white">
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- slider-1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-2 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px;">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/cycles.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Premium Non-geared Cycles</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Upto 40% off</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Hercules, Hero & more </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 220px;  padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/cricket.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Cricket</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Upto 45% off</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">CEAT, MRF & more </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a href="http://127.0.0.1:5500/all_stationery.html" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px;  padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/stationery.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Top Selling Stationery</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">from &#8377;49</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Pens, Notebooks & more </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/deo.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Deodrants & Perfumes</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Upto 60% off</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Denver, Fogg & more </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/gym.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Gym</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Upto 50% off</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">PROWL, HRX & KRX </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/books.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Fiction Books</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Upto 70% off</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Shop Now! </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- slider-1 End -->
+            <!-- slider-2 -->
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-2 text-center">
+                  <a href="#" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 15px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/helmets.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Rider Helmets</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">from &#8377;699</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Vega, Steelbird & more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <a href="http://127.0.0.1:5500/all_beauty.html" class="link_block">
+                    <div class="card border-0 h-100" style="width: 232px; padding:25px 20px; ">
+                      <div class="imgDiv mb-2" style="width: 200px; height: 200px;">
+                        <img src="./images/BFT/makeup.png" class="card-img-top img-fluid h-100" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title s_cardTitle">Makeup</h4>
+                        <a href="#" class="text-success" style="font-size:16px;">Shop Now!</a>
+                        <p class="card-text text-muted mt-2" style="font-size:14px;">Lakme, Maybelline & more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- slider-2 End -->
+          </div>
+          <div class="carousel_buttons">
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls2"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls2"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-5 bg-white border-top">
+    <div class="row">
+      <div class="col py-5 px-3">
+        <p style="font-size:14px;" class="text-muted">Top Stories: <span class="text-dark">Brand Directory</span></p>
+        <p class="text-secondary" style="font-size:12px;"><span style="font-size:14px;">MOST SEARCHED FOR ON
+            FLIPKART:</span>Bounce Infinity E1 | iPhone 14 Covers | vivo T1X | OPPO Reno8 5G | OPPO Reno8 Pro 5G |
+          Nothing Phone 1 | Sell Old Mobile Phones | ASUS TUF Gaming F15 Core i5 10th Gen | Electronics Store | OPPO
+          A16K | Vivo Y33T | OPPO Reno7 5G | Bathroom Exhaust Fan | Samsung Window AC | OPPO Reno7 Pro 5G | iPhone 13 |
+          iPhone 13 Pro | iPhone 13 Pro Max | iPhone 13 Mini | Google Pixel 6a covers | Flipkart QuickBooks | Flipkart
+          Help Centre | Online Boat Store | Covers from Rs 99 | Flipkart Track Orders | Flipkart Manage Orders |
+          Flipkart Return Orders | Flipkart Gift Cards Store | Flipkart Axis Bank Credit Card | Flipkart Pay Later</p>
+        <p class="text-secondary" style="font-size:12px;"><span style="font-size:14px;">MOBILES:</span>Bounce Infinity
+          E1 | iPhone 14 Covers | vivo T1X | OPPO Reno8 5G | OPPO Reno8 Pro 5G | Nothing Phone 1 | Sell Old Mobile
+          Phones | ASUS TUF Gaming F15 Core i5 10th Gen | Electronics Store | OPPO A16K | Vivo Y33T | OPPO Reno7 5G |
+          Bathroom Exhaust Fan | Samsung Window AC | OPPO Reno7 Pro 5G | iPhone 13 | iPhone 13 Pro | iPhone 13 Pro Max |
+          iPhone 13 Mini | Google Pixel 6a covers | Flipkart QuickBooks | Flipkart Help Centre | Online Boat Store |
+          Covers from Rs 99 | Flipkart Track Orders | Flipkart Manage Orders | Flipkart Return Orders | Flipkart Gift
+          Cards Store | Flipkart Axis Bank Credit Card | Flipkart Pay Later</p>
+        <p class="text-secondary" style="font-size:12px;"><span style="font-size:14px;">CAMERA:</span>Bounce Infinity E1
+          | iPhone 14 Covers | vivo T1X | OPPO Reno8 5G | OPPO Reno8 Pro 5G | Nothing Phone 1 | Sell Old Mobile Phones |
+          ASUS TUF Gaming F15 Core i5 10th Gen | Electronics Store | OPPO A16K | Vivo Y33T | OPPO Reno7 5G | Bathroom
+          Exhaust Fan | Samsung Window AC | OPPO Reno7 Pro 5G | iPhone 13 | iPhone 13 Pro | iPhone 13 Pro Max | iPhone
+          13 Mini | Google Pixel 6a covers | Flipkart QuickBooks | Flipkart Help Centre | Online Boat Store | Covers
+          from Rs 99 | Flipkart Track Orders | Flipkart Manage Orders | Flipkart Return Orders | Flipkart Gift Cards
+          Store | Flipkart Axis Bank Credit Card | Flipkart Pay Later</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_div p-3">
+      <div class="row footer_elements mb-3 mt-0 my-4 pt-4 d-flex justify-content-between" style="font-size:12px;">
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <p class="text-secondary">ABOUT</p>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Careers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Flipkart Stories</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Press</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Flipkart Wholesale</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <p class="text-secondary">HELP</p>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Payments</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Shipping</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Cancellation & Returns</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Report Infringement</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <p class="text-secondary">POLICY</p>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Return Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms of Use</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Security</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sitemap</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">EPR Compliance</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="nav flex-column pe-0">
+            <li class="nav-item mb-2">
+              <p class="text-secondary">SOCIAL</p>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Twitter</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="col-2  border-secondary">
+          <ul class="nav flex-column  text-white border-start border-secondary ps-4 ">
+            <li class="nav-item mb-2 ms-0">
+              <p class="text-secondary">Mail Us:</p>
+            </li>
+            <li class="nav-item text-white ms-0">Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove
+              Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, </a></li>
+            <li class="nav-item text-white ms-0">Bengaluru, 560 103,</li>
+            <li class="nav-item text-white ms-0">Karnataka, India</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 ms-0">
+              <p class="text-secondary">Registered Office Address:</p>
+            </li>
+            <li class="nav-item text-white ms-0">Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove
+              Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, </a></li>
+            <li class="nav-item text-white ms-0">Bengaluru, 560 103,</li>
+            <li class="nav-item text-white ms-0">Karnataka, India</li>
+            <li class="nav-item text-white ms-0">CIN : U51109KA2012PTC066107</li>
+            <li class="nav-item text-white ms-0">Telephone : <a href="#"
+                class="nav-link p-0 text-primary">044-45614700</a></li>
+          </ul>
+        </div>
+        <hr class="text-secondary">
+      </div>
+      <div
+        class="row footer_elements mb-0 mt-0 my-4 pt-0 d-flex justify-content-between align-items-center text-white p-0"
+        style="font-size:14px;">
+        <div class="col-2 text-center"><i class="fa-solid fa-suitcase text-warning me-2"></i>Become a Seller</div>
+        <div class="col-2 text-center"><i class="fa-sharp fa-solid fa-star text-warning me-2"></i>Advertise</div>
+        <div class="col-2 text-center"><i class="fa-solid fa-gift text-warning me-2"></i>Gift Cards</div>
+        <div class="col-2 text-center"><i class="fa-solid fa-circle-question text-warning me-2"></i>Help Center</div>
+        <div class="col-2 text-center">&copy; 2007-2022 Flipkart.com</div>
+        <div class="col-2 text-center"><img src="./images/footerImages/footerImg.bmp" alt=""></div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
